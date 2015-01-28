@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hungtdo.demoactionbar.MainActivity" >
+
+    <item
+        android:id="@+id/action_compose"
+        android:icon="@drawable/ic_menu_compose"
+        android:orderInCategory="100"
+        android:title="@string/action_compose"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        yourapp:showAsAction="never"/>
+
+</menu>
