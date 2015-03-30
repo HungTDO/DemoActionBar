@@ -8,8 +8,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hungtdo.demoactionbar.MainActivity" >
 
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tvSearch" />
+
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tvSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
@@ -30,5 +36,14 @@
         android:layout_centerInParent="true"
         android:onClick="openSettings"
         android:text="Settings" />
+
+    <Button
+        android:id="@+id/btnToogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSettings"
+        android:layout_centerInParent="true"
+        android:onClick="toogleAction"
+        android:text="Toogle" />
 
 </RelativeLayout>
